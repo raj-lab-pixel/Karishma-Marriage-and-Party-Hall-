@@ -68,3 +68,12 @@ document.getElementById("contactForm").addEventListener("submit", function (e) {
 
   window.open(whatsappURL, "_blank");
 });
+
+function toggleMenu() {
+  const menu = document.getElementById('menu');
+  menu.style.right = menu.style.right === '0px' ? '-250px' : '0px';
+}
+
+function toggleDarkMode() {
+  document.body.classList.toggle('dark-mode');
+}
