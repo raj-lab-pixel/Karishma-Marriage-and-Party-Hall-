@@ -279,3 +279,9 @@ body.dark .btn{
 #about-us h2{
   font-size: 34px;
 }
+@media (max-width: 768px){
+  body::before{
+    position: absolute;   /* change from fixed */
+    background-attachment: scroll;
+  }
+}
