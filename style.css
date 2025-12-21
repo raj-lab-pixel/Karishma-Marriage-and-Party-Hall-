@@ -279,9 +279,37 @@ body.dark .btn{
 #about-us h2{
   font-size: 34px;
 }
+/* =========================
+   MOBILE FIXES (ALL-IN-ONE)
+========================= */
 @media (max-width: 768px){
+
+  /* Background fix */
   body::before{
-    position: absolute;   /* change from fixed */
+    position: absolute;
     background-attachment: scroll;
   }
+
+  /* Layout spacing */
+  header{
+    padding:20px 20px 80px;
+    text-align:center;
+  }
+
+  section{
+    padding:40px 20px;
+  }
+
+  /* Hero text */
+  .hero h1{
+    font-size:28px;
+    line-height:1.3;
+  }
+
+  .hero p{
+    font-size:16px;
+  }
+
 }
+
+  
