@@ -318,3 +318,92 @@ body.dark .btn{
   }
 
 }
+/* Hamburger button */
+.menu-button {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 35px;
+  height: 30px;
+  cursor: pointer;
+  z-index: 1001;
+  display: none; /* show only on mobile */
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.menu-button div {
+  background-color: #333;
+  height: 4px;
+  border-radius: 2px;
+}
+
+/* Menu panel */
+.menu {
+  position: fixed;
+  top: 0;
+  right: -250px;
+  width: 250px;
+  height: 100%;
+  background-color: #f0f0f0;
+  box-shadow: -2px 0 5px rgba(0,0,0,0.3);
+  transition: right 0.3s;
+  padding-top: 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  z-index: 1000;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #333;
+  font-size: 18px;
+  padding: 10px 20px;
+}
+
+.menu a:hover {
+  background-color: #ddd;
+}
+
+/* Dark mode button inside menu */
+.dark-mode-btn {
+  margin: 20px;
+  padding: 10px;
+  cursor: pointer;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+/* Dark mode styles */
+body.dark-mode {
+  background-color: #121212;
+  color: #f0f0f0;
+}
+
+body.dark-mode .menu {
+  background-color: #1e1e1e;
+}
+
+body.dark-mode .menu a {
+  color: #f0f0f0;
+}
+
+body.dark-mode .menu a:hover {
+  background-color: #333;
+}
+
+/* Show hamburger only on mobile */
+@media screen and (max-width: 768px) {
+  .menu-button {
+    display: flex;
+  }
+
+  nav ul {
+    display: none; /* hide desktop menu on mobile */
+  }
+}
+
