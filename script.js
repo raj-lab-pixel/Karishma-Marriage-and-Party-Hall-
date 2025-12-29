@@ -1,22 +1,14 @@
-/* =======================
-   DARK MODE TOGGLE
-======================= */
 const themeToggle = document.getElementById("themeToggle");
 
 themeToggle.addEventListener("click", () => {
   document.body.classList.toggle("dark");
 
-  // change icon
   if(document.body.classList.contains("dark")){
     themeToggle.textContent = "☀️";
   }else{
     themeToggle.textContent = "🌙";
   }
 });
-
-/* =======================
-   GALLERY LIGHTBOX
-======================= */
 const galleryImages = document.querySelectorAll(".gallery img");
 const lightbox = document.getElementById("lightbox");
 const lightboxImg = document.getElementById("lightbox-img");
@@ -52,8 +44,7 @@ document.getElementById("contactForm").addEventListener("submit", function (e) {
     alert("Please fill all required fields");
     return;
   }
-
-  // WhatsApp message (NO template literal, NO starting newline)
+   
   const whatsappMessage =
     "New Enquiry - Karishma Marriage & Party Hall\n\n" +
     "Name: " + name + "\n" +
