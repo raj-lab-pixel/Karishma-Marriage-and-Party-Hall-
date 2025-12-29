@@ -3,14 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>KARISHMA MARRIAGE AND PARTY HALL</title>
-
 <link rel="icon" href="images/logo.png" type="image/png">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 <style>
-/* ----- Hamburger Menu & Dark Mode ----- */
 .menu-button {
   position: fixed;
   top: 20px;
@@ -23,14 +20,11 @@
   flex-direction: column;
   justify-content: space-between;
 }
-
 .menu-button div {
   background-color: #333;
   height: 4px;
   border-radius: 2px;
 }
-
-/* Side Menu */
 .menu {
   position: fixed;
   top: 0;
@@ -46,18 +40,15 @@
   gap: 20px;
   z-index: 1000;
 }
-
 .menu a {
   text-decoration: none;
   color: #333;
   font-size: 18px;
   padding: 10px 20px;
 }
-
 .menu a:hover {
   background-color: #ddd;
 }
-
 .dark-mode-btn {
   margin: 20px;
   padding: 10px;
@@ -68,48 +59,35 @@
   font-size: 16px;
   border-radius: 5px;
 }
-
-/* Dark Mode Styles */
 body.dark-mode {
   background-color: #121212;
   color: #f0f0f0;
 }
-
 body.dark-mode .menu {
   background-color: #1e1e1e;
 }
-
 body.dark-mode .menu a {
   color: #f0f0f0;
 }
-
 body.dark-mode .menu a:hover {
   background-color: #333;
 }
-
-/* Mobile Only */
 @media screen and (max-width: 768px) {
   .menu-button {
     display: flex;
   }
-
   nav ul {
     display: none;
   }
 }
 </style>
 </head>
-
 <body>
-
-<!-- Hamburger button -->
 <div class="menu-button" onclick="toggleMenu()">
   <div></div>
   <div></div>
   <div></div>
 </div>
-
-<!-- Side menu -->
 <div class="menu" id="menu">
   <a href="#home">Home</a>
   <a href="#gallery">Gallery</a>
@@ -118,7 +96,6 @@ body.dark-mode .menu a:hover {
   <a href="#contact">Contact Us</a>
   <button class="dark-mode-btn" onclick="toggleDarkMode()">🌙 Dark Mode</button>
 </div>
-
 <header>
   <nav>
     <h2>करिश्मा मैरिज एंड पार्टी हॉल</h2>
@@ -131,20 +108,16 @@ body.dark-mode .menu a:hover {
       <li><button id="themeToggle" class="dark-btn">🌙</button></li>
     </ul>
   </nav>
-
   <div class="hero">
     <h1>KARISHMA MARRIAGE and PARTY HALL</h1>
     <h1>is a Perfect Venue for Weddings & Celebrations</h1>
   </div>
 </header>
-
-<!-- Gallery Section -->
 <section id="gallery">
   <div class="section-title">
     <h2>---Gallery---</h2>
   </div>
   <div class="gallery">
-    <!-- images remain unchanged -->
     <img src="https://image.wedmegood.com/resized/450X/uploads/member/24995021/1721993551_Screenshot_2024_07_26_170212.png">
     <img src="https://image.wedmegood.com/resized/450X/uploads/member/24995021/1732299692_image3177.jpg">
     <img src="https://image.wedmegood.com/resized/450X/uploads/member/24995021/1732299696_image2526.jpg">
@@ -156,8 +129,6 @@ body.dark-mode .menu a:hover {
     <img src="https://image.wedmegood.com/resized/450X/uploads/member/24995021/1721839371_image8112.jpg">
   </div>
 </section>
-
-<!-- Services Section -->
 <section id="services">
   <div class="section-title">
     <h2>---Our Services---</h2>
@@ -197,8 +168,6 @@ body.dark-mode .menu a:hover {
     </div>
   </div>
 </section>
-
-<!-- About Section -->
 <section id="about-us">
   <div class="section-title">
     <h2>---About Us---</h2>
@@ -208,17 +177,15 @@ body.dark-mode .menu a:hover {
       <p>
         <strong>Karishma Marriage & Party Hall</strong> is a premium venue designed
         to make your special moments unforgettable. With spacious halls,
-        beautiful décor, and professional services, we ensure your event is
+        beautiful decor, and professional services, we ensure your event is
         perfect from start to finish.
       </p>
-      <p>* 4+ years experience </p>
+      <p>* 4+ years experience</p>
       <p>* 100+ Happy families</p>
     </div>
     <img src="https://imgs.search.brave.com/lRbISGbraHQLaJa5TV3EMWpMn7TuK3qImrYcMAypTLI/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/ZnJlZS1waG90by9j/bG90aGVzLXR3aW5l/ZC10b3Atd2VkZGlu/Zy1hbHRhcl8xMzA0/LTM3MTQuanBnP3Nl/bXQ9YWlzX2h5YnJp/ZCZ3PTc0MCZxPTgw" alt="About Karishma Hall" style="width:100%;border-radius:12px;">
   </div>
 </section>
-
-<!-- Contact Section (unchanged) -->
 <section id="contact">
   <div class="section-title">
     <h2>---Contact us---</h2>
@@ -228,40 +195,29 @@ body.dark-mode .menu a:hover {
       <a href="tel:+919935563407" class="btn">📞 Call 9935563407 - Mr. Guddu Yadav</a>
       <a href="https://wa.me/919026405964" target="_blank" class="btn">💬 WhatsApp</a>
   </div>
-
   <div style="margin-top:40px;">
     <h3 style="text-align:center;margin-bottom:15px;">📍 Our Location</h3>
     <iframe src="https://www.google.com/maps?q=HFCV%2BV9V%2C%20Singhupur%20Road%2C%20Kashiram%20Colony%2C%20Uttar%20Pradesh%20209801&output=embed" width="100%" height="350" style="border-radius:12px;border:0;" loading="lazy" allowfullscreen></iframe>
   </div>
 </section>
-
 <footer>
   HFCV+V9V, Singhupur Road, Near Power House, Kashiram Colony, Uttar Pradesh - 209801
   <p>📞 9026405964 | 📞 9935563407</p>
   <p>© 2025 Karishma Marriage & Party Hall</p>
 </footer>
-
-<!-- Lightbox -->
 <div id="lightbox" class="lightbox">
   <span class="close">&times;</span>
   <img id="lightbox-img">
 </div>
-
 <script>
 function toggleMenu() {
   const menu = document.getElementById('menu');
   menu.style.right = menu.style.right === '0px' ? '-250px' : '0px';
 }
-
 function toggleDarkMode() {
   document.body.classList.toggle('dark-mode');
 }
-
-// Optional: also toggle header button
 document.getElementById('themeToggle').addEventListener('click', toggleDarkMode);
 </script>
-
 </body>
 </html>
-
-
