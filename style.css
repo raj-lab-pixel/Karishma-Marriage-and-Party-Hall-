@@ -31,13 +31,12 @@ body::before{
   background-image:url('https://imgs.search.brave.com/ZXoNRvS5jENJ3dmk9RWimWD5dOmC3C7BrSs7IJMxzt4/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/ZnJlZS1waG90by9n/eXBzb3BoaWxhLWdy/YXktYmFja2dyb3Vu/ZC13aXRoLWNvcHkt/c3BhY2UtY2VudGVy/XzI0OTcyLTMzNi5q/cGc_c2VtdD1haXNf/aHlicmlk');
   background-size:cover;
   background-position:center;
-  opacity:1;          /* light mode opacity */
+  opacity:1;       
   z-index:-1;
 }
 
-/* Dark mode overlay */
 body.dark::before{
-  opacity:0.05;          /* darker in dark mode */
+  opacity:0.05;          
 }
 
 
@@ -123,7 +122,6 @@ section{
   animation:bounce 0.5s;
 }
 
-/* Our Services Boxes */
 .service-box{
   cursor:pointer;
   transition:0.35s ease;
@@ -135,7 +133,6 @@ section{
   box-shadow:0 15px 35px rgba(0,0,0,0.18);
 }
 
-/* Optional icon style later */
 .service-box h4{
   margin-bottom:8px;
   color:#c59d5f;
@@ -145,7 +142,6 @@ section{
   font-weight:500;
 }
 
-/* Bounce animation */
 @keyframes bounce {
   0%,100% { transform:translateY(0); }
   50% { transform:translateY(-8px); }
@@ -215,7 +211,7 @@ footer{
 html{
   scroll-behavior:smooth;
 }
-/* Services Rectangle Boxes */
+
 .services-wrapper{
   display:grid;
   grid-template-columns:repeat(auto-fit, minmax(220px, 1fr));
@@ -224,7 +220,7 @@ html{
 
 .service-rect{
   background:#ffffff;
-  border-radius:8px;           /* rectangle, not circle */
+  border-radius:8px;           
   padding:30px 20px;
   text-align:center;
   border:2px solid #e6e6e6;
@@ -241,14 +237,12 @@ html{
   font-weight:500;
 }
 
-/* Hover animation */
 .service-rect:hover{
   transform:translateY(-8px);
   box-shadow:0 14px 30px rgba(0,0,0,0.15);
   border-color:#c59d5f;
 }
 
-/* Dark mode fixes */
 body.dark header{
   background:linear-gradient(rgba(0,0,0,.8),rgba(0,0,0,.8)),
   url('https://image.wedmegood.com/resized/450X/uploads/member/24995021/1721839252_image3432.jpg');
@@ -272,19 +266,18 @@ body.dark .btn{
   background:#6a00d4;
 }
 
-/* About Us – Bigger Text */
 #about-us p{
-  font-size: 18px;      /* bigger text */
-  line-height: 1.8;     /* better readability */
+  font-size: 18px;    
+  line-height: 1.8;     
 }
 
 #about-us strong{
-  font-size: 20px;      /* hall name bigger */
+  font-size: 20px;      
   display: inline-block;
   margin-bottom: 10px;
 }
 
-/* Optional: headings inside About Us */
+
 #about-us h2{
   font-size: 34px;
 }
@@ -318,7 +311,6 @@ body.dark .btn{
   }
 
 }
-/* Hamburger button */
 .menu-button {
   position: fixed;
   top: 20px;
@@ -327,7 +319,7 @@ body.dark .btn{
   height: 30px;
   cursor: pointer;
   z-index: 1001;
-  display: none; /* show only on mobile */
+  display: none;
   flex-direction: column;
   justify-content: space-between;
 }
@@ -338,7 +330,6 @@ body.dark .btn{
   border-radius: 2px;
 }
 
-/* Menu panel */
 .menu {
   position: fixed;
   top: 0;
@@ -366,7 +357,6 @@ body.dark .btn{
   background-color: #ddd;
 }
 
-/* Dark mode button inside menu */
 .dark-mode-btn {
   margin: 20px;
   padding: 10px;
@@ -378,7 +368,6 @@ body.dark .btn{
   border-radius: 5px;
 }
 
-/* Dark mode styles */
 body.dark-mode {
   background-color: #121212;
   color: #f0f0f0;
@@ -396,7 +385,6 @@ body.dark-mode .menu a:hover {
   background-color: #333;
 }
 
-/* Show hamburger only on mobile */
 @media screen and (max-width: 768px) {
   .menu-button {
     display: flex;
@@ -406,4 +394,3 @@ body.dark-mode .menu a:hover {
     display: none; /* hide desktop menu on mobile */
   }
 }
-
